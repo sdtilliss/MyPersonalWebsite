@@ -3,21 +3,44 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
     background-color: #333;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    margin-bottom: auto;
+    display: block;
     color: #fff;
-    text-align: center;
-    padding: 1em;
+    text-decoration: none;
+    padding: 1.5em 2em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .main-content {
+    flex: 1;
     padding: 20px;
 }
 
@@ -26,4 +49,13 @@ header {
     color: #fff;
     text-align: center;
     padding: 1em;
+    margin-top: auto;
+}
+
+.profile-picture {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
